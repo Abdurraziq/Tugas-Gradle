@@ -1,0 +1,9 @@
+task copyReport(type: Copy) {
+    from file("$buildDir/reports/my-report.pdf")
+    into file("$buildDir/toArchive")
+}
+
+task copyReport2(type: Copy) {
+    from "$buildDir/reports/my-report.pdf"
+    into "$buildDir/toArchive"
+}
