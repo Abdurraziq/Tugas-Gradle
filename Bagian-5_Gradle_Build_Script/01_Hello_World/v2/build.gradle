@@ -1,0 +1,13 @@
+// dipisah dan menggunakan dependsOn
+
+task hello {
+    doLast {
+        print 'hello, '
+    }
+}
+
+task world(dependsOn:hello) {
+    doLast {
+        println 'world'
+    }
+}
